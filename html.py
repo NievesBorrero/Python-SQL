@@ -3,7 +3,7 @@
 import MySQLdb
 
 def ejecutarConsulta(consulta=''):
-	conexion = MySQLdb.connect('localhost', 'root', 'bd130', 'empleados')  # Abro la conexión
+	conexion = MySQLdb.connect('localhost', 'root', '', 'empleados')  # Abro la conexión
 	cursor= conexion.cursor()
 	cursor.execute(consulta)
 	if consulta.upper().startswith('SELECT'):
