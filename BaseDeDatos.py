@@ -2,7 +2,7 @@
 
 import MySQLdb  # importo las librerías de mySQL
 
-conexion= MySQLdb.connect('localhost', 'root', 'bd130', 'empleados')  # Abro la conexión 
+conexion= MySQLdb.connect('localhost', 'root', '', 'empleados')  # Abro la conexión 
 
 def crearTabla(sql):  # Le paso la cadena que realizará el create como parámetro.
 	cursorCrear = conexion.cursor()  #En un cursor (de la conexión) almaceno lo que quiero enviar a la base de datos.
